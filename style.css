@@ -33,37 +33,61 @@ body{
     background-color: hsl(180, 68%, 80%);
 }
 
+.dropblockcontainer{
+    display:inline-block;
+    position:relative;
+    left:35%; /*was only able to shift the button to middle this way*/
+    
+}
 .dropblock{
     min-width:10px;
     height:30px;
-    margin-left:10px; 
+    display:inline-block;
 }
 .dropblock button{
     height:30px;
     width:100px; 
     border:0px;
-    border-radius:20px;
-    background-color:hsl(240, 100%, 61%);
+    background-color:hsl(240, 100%, 60%);
     color:antiquewhite;
     font-size:large;
     font-family:"Playfair Display","Open sans";
     font-style:italic;  
+    border-left-style:solid;
+    border-color:black;
+    width:150px;
+    border-width:2px;
+}
+.dropblock button:hover{
+    background-color:hsl(240, 100%, 65%);
+
+}
+#courseBlock button{
+    border-right-style: solid;
+    /*width:150px; /*eihter this or put it too all buttons to look good*/ 
 }
 #levelBlock{
     float:left;
 }
 #courseBlock{
-    display: inline;
+    width:100px;
 }
 
-/*try relative positioning of course selector with levelslector div block*/
+/*note try and check out the other sections textbox as it overflows when width is 150 px*/ 
 .dropblock .content{
-   /* float:left;*/
     display:none;/*make it hiddenn so the dropdown menu of farthur buttons are shown further*/
 }
+#courseBlock .content{
+    width:150px;
+}
 .label{
-    color:hsl(240, 86%, 56%);
-    background-color: hsl(240, 86%, 26%);
+    color:white;
+    background-color: hsl(180, 68%, 70%);
+    padding:5px 1px;
+    border-top-style:groove;
+}
+.label:hover{
+    background-color: hsl(180, 68%, 80%);
 }
 .dropblock:hover .content{
     display:block;
