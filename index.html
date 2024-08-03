@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackiton</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>HACKITON</h1>
+    </header>
+
+    <div id="navigation">
+        <nav>
+            <a href="contact.html">Contact Us</a>
+            <a href="credit.html">Credits</a>
+        </nav>
+    </div>
+    <main>
+        <div class="dropblockcontainer">
+            <div class="dropblock" id="levelBlock" >
+                <button>Level</button><br>
+                <div class="content" id="levelcontent">
+                    <form>
+                        <input type="radio" name="level" id="beginner">
+                        <label for="beginner">Beginner</label><br>
+                        <input type="radio" name="level" id="intermediate">
+                        <label for="intermediate">Intermediate</label><br>
+                        <input type="radio" name="level" id="Near_Master">
+                        <label for="nearMaster">Near Master</label><br>
+                        <input type="radio" name="level" id="master">
+                        <label for="master">Master</label><br>
+                        <input type="reset"> 
+                    </form>
+                </div>
+            </div>
+
+            <div class="dropblock" id="courseBlock">
+                <button>Course</button><br>
+                <div class="content" id="coursecontent">
+                    <form>
+                        <input  type="radio" name="droppedelement" id="webDevelopment">
+                        <label for="webDevelopment">Web Development</label><br>
+                        <input  type="radio" name="droppedelement" id="softwareDevelopment">
+                        <label for="softwareDevelopment">Software/Game Development</label><br>
+                        <input  type="radio" name="droppedelement" id="cyberSecurity">
+                        <label for="cyberSecurity">Cyber Security</label><br>
+                        <label  for="other">Other:</label>
+                        <input  type="textbox" name="droppedelement" id="other"><br>
+                        <input  type="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+<!--check how to move the button div blocks to the middle-->

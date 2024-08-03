@@ -1,0 +1,70 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*.playfair-display-italicfont {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+  }*/
+
+h1 {
+    text-align: center;
+    padding:10px 0px;
+}
+nav {
+    text-align: right;
+}
+#navigation{
+    padding:2px;
+    background-color: hwb(204 26% 42%);
+    border-top-style: groove;
+    border-bottom-style: groove;
+    margin-bottom:35px;
+}
+#navigation a{
+    color:bisque;
+    padding-right:10px;
+}
+body{
+    background-color: hsl(180, 68%, 80%);
+}
+
+.dropblock{
+    min-width:10px;
+    height:30px;
+    margin-left:10px; 
+}
+.dropblock button{
+    height:30px;
+    width:100px; 
+    border:0px;
+    border-radius:20px;
+    background-color:hsl(240, 100%, 61%);
+    color:antiquewhite;
+    font-size:large;
+    font-family:"Playfair Display","Open sans";
+    font-style:italic;  
+}
+#levelBlock{
+    float:left;
+}
+#courseBlock{
+    display: inline;
+}
+
+/*try relative positioning of course selector with levelslector div block*/
+.dropblock .content{
+   /* float:left;*/
+    display:none;/*make it hiddenn so the dropdown menu of farthur buttons are shown further*/
+}
+.label{
+    color:hsl(240, 86%, 56%);
+    background-color: hsl(240, 86%, 26%);
+}
+.dropblock:hover .content{
+    display:block;
+}
