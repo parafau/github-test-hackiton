@@ -11,6 +11,10 @@
     font-style: normal;
   }*/
 
+body{
+    background-color: hsl(180, 24%, 62%);
+}
+
 h1 {
     text-align: center;
     padding:10px 0px;
@@ -29,15 +33,12 @@ nav {
     color:bisque;
     padding-right:10px;
 }
-body{
-    background-color: hsl(180, 68%, 80%);
-}
 
 .dropblockcontainer{
-    display:inline-block;
-    position:relative;
-    left:35%; /*was only able to shift the button to middle this way*/
-    
+    display:block;
+    /*was only able to shift the button to middle this way*/
+    margin: auto;
+    width: 310px;/*margin=act.width of block level and course*/
 }
 .dropblock{
     min-width:10px;
@@ -46,10 +47,8 @@ body{
 }
 .dropblock button{
     height:30px;
-    width:100px; 
-    border:0px;
-    background-color:hsl(240, 100%, 60%);
-    color:antiquewhite;
+    background-color:hsl(34, 78%, 91%);
+    color:rgb(0, 0, 0);
     font-size:large;
     font-family:"Playfair Display","Open sans";
     font-style:italic;  
@@ -59,9 +58,13 @@ body{
     border-width:2px;
 }
 .dropblock button:hover{
-    background-color:hsl(240, 100%, 65%);
+    background-color:hsl(34, 78%, 99%);
 
 }
+.dropblock:hover .content{
+    display:block;
+}
+
 #courseBlock button{
     border-right-style: solid;
     /*width:150px; /*eihter this or put it too all buttons to look good*/ 
@@ -69,26 +72,25 @@ body{
 #levelBlock{
     float:left;
 }
-#courseBlock{
-    width:100px;
-}
+
 
 /*note try and check out the other sections textbox as it overflows when width is 150 px*/ 
 .dropblock .content{
     display:none;/*make it hiddenn so the dropdown menu of farthur buttons are shown further*/
+    border-style:outset; 
 }
 #courseBlock .content{
     width:150px;
 }
 .label{
-    color:white;
-    background-color: hsl(180, 68%, 70%);
-    padding:5px 1px;
+    color:black;
+    background-color: hsl(34, 41%, 67%);
+    padding:5px 8px;
     border-top-style:groove;
+    overflow: hidden;
 }
 .label:hover{
-    background-color: hsl(180, 68%, 80%);
+    background-color: hsl(34, 41%, 60%);
 }
-.dropblock:hover .content{
-    display:block;
-}
+
+/*html/head/ <meta http-equiv="refresh" content="10"> */
