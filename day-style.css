@@ -11,12 +11,27 @@
     font-style: normal;
   }*/
 
+#favicon{
+    height: 3.1em;
+    width: 3.1em;
+    background-color: violet;
+    float:left;
+    margin:5px;
+    position:fixed;
+    border-radius: 10px;
+}
+#favicon img{
+    height: 3.1em;
+    width: 3.1em;
+    border-radius: 10px;
+}
 body{
     background-color: hsl(180, 24%, 62%);
 }
 
 h1 {
-    text-align: center;
+    position:relative;
+    left:2em;
     padding:10px 0px;
 }
 nav {
@@ -27,7 +42,7 @@ nav {
     background-color: hwb(204 26% 42%);
     border-top-style: groove;
     border-bottom-style: groove;
-    margin-bottom:35px;
+    margin-bottom:50px;
 }
 #navigation a{
     color:bisque;
@@ -38,7 +53,8 @@ nav {
     display:block;
     /*was only able to shift the button to middle this way*/
     margin: auto;
-    width: 310px;/*margin=act.width of block level and course*/
+    width: 305px;/*margin=act.width of block level and course*/
+    height : 35px;
 }
 .dropblock{
     min-width:10px;
@@ -48,7 +64,7 @@ nav {
 .dropblock button{
     height:30px;
     background-color:hsl(34, 78%, 91%);
-    color:rgb(0, 0, 0);
+    color:black;
     font-size:large;
     font-family:"Playfair Display","Open sans";
     font-style:italic;  
@@ -63,11 +79,11 @@ nav {
 }
 .dropblock:hover .content{
     display:block;
+    box-shadow: 2px 2px 2px;
 }
 
 #courseBlock button{
     border-right-style: solid;
-    /*width:150px; /*eihter this or put it too all buttons to look good*/ 
 }
 #levelBlock{
     float:left;
@@ -77,7 +93,7 @@ nav {
 /*note try and check out the other sections textbox as it overflows when width is 150 px*/ 
 .dropblock .content{
     display:none;/*make it hiddenn so the dropdown menu of farthur buttons are shown further*/
-    border-style:outset; 
+
 }
 #courseBlock .content{
     width:150px;
@@ -86,11 +102,24 @@ nav {
     color:black;
     background-color: hsl(34, 41%, 67%);
     padding:5px 8px;
-    border-top-style:groove;
+    border-top-style:solid;
+    border-width:1px;
     overflow: hidden;
 }
 .label:hover{
     background-color: hsl(34, 41%, 60%);
 }
 
+#hackathon-block{
+    background-color: hsl(231, 70%, 57%);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    width : 80vw;
+    height :50vh;
+    border-radius:75px
+}
 /*html/head/ <meta http-equiv="refresh" content="10"> */
+
+/*hint put all size in %;; beast pc : 1920 X 1080

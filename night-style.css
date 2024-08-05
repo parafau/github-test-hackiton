@@ -1,0 +1,112 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    color:limegreen;
+}
+
+/*.playfair-display-italicfont {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+  }*/
+
+body{
+    background-color: hsl(340, 14%, 4%);
+}
+
+h1 {
+    position:relative;
+    left:1em;
+    padding:10px 0px;
+}
+nav {
+    text-align: right;
+}
+#navigation{
+    padding:2px;
+    background-color: hwb(204 26% 42%);
+    border-top-style: groove;
+    border-bottom-style: groove;
+    margin-bottom:50px;
+}
+#navigation a{
+    color:bisque;
+    padding-right:10px;
+}
+
+.dropblockcontainer{
+    display:block;
+    /*was only able to shift the button to middle this way*/
+    margin: auto;
+    width: 305px;/*margin=act.width of block level and course*/
+    height : 35px;
+}
+.dropblock{
+    min-width:10px;
+    height:30px;
+    display:inline-block;
+}
+.dropblock button{
+    height:30px;
+    background-color:hsl(34, 78%, 91%);
+    color:black;
+    font-size:large;
+    font-family:"Playfair Display","Open sans";
+    font-style:italic;  
+    border-left-style:solid;
+    border-color:black;
+    width:150px;
+    border-width:2px;
+}
+.dropblock button:hover{
+    background-color:hsl(34, 78%, 99%);
+
+}
+.dropblock:hover .content{
+    display:block;
+    box-shadow: 2px 2px 2px;
+}
+
+#courseBlock button{
+    border-right-style: solid;
+}
+#levelBlock{
+    float:left;
+}
+
+
+/*note try and check out the other sections textbox as it overflows when width is 150 px*/ 
+.dropblock .content{
+    display:none;/*make it hiddenn so the dropdown menu of farthur buttons are shown further*/
+
+}
+#courseBlock .content{
+    width:150px;
+}
+.label{
+    color:black;
+    background-color: hsl(34, 41%, 67%);
+    padding:5px 8px;
+    border-top-style:solid;
+    border-width:1px;
+    overflow: hidden;
+}
+.label:hover{
+    background-color: hsl(34, 41%, 60%);
+}
+
+#hackathon-block{
+    background-color: hsl(231, 70%, 57%);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    width : 80vw;
+    height :50vh;
+    border-radius:75px
+}
+/*html/head/ <meta http-equiv="refresh" content="10"> */
+
+/*hint put all size in %;; beast pc : 1920 X 1080
