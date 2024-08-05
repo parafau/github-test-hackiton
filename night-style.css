@@ -2,7 +2,6 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    color:limegreen;
 }
 
 /*.playfair-display-italicfont {
@@ -17,22 +16,37 @@ body{
 }
 
 h1 {
-    position:relative;
-    left:1em;
-    padding:10px 0px;
+    color:limegreen;
+    margin:10px 10px;
 }
+#favicon{
+    height: 3.1em;
+    width: 3.1em;
+    background-color: violet;
+    float:left;
+    margin:5px;
+    position:fixed;
+    border-radius: 10px;
+}
+#favicon img{
+    height: 3.1em;
+    width: 3.1em;
+    border-radius: 10px;
+}
+
+
 nav {
     text-align: right;
 }
 #navigation{
     padding:2px;
-    background-color: hwb(204 26% 42%);
+    background-color: hwb(205 10% 79%);
     border-top-style: groove;
     border-bottom-style: groove;
     margin-bottom:50px;
 }
 #navigation a{
-    color:bisque;
+    color:hsl(120, 61%, 40%);
     padding-right:10px;
 }
 
@@ -56,7 +70,7 @@ nav {
     font-family:"Playfair Display","Open sans";
     font-style:italic;  
     border-left-style:solid;
-    border-color:black;
+    border-color:rgb(211, 191, 191);
     width:150px;
     border-width:2px;
 }
@@ -96,7 +110,9 @@ nav {
 .label:hover{
     background-color: hsl(34, 41%, 60%);
 }
-
+p{
+    color:limegreen;
+}
 #hackathon-block{
     background-color: hsl(231, 70%, 57%);
     margin-right: auto;
@@ -106,6 +122,44 @@ nav {
     width : 80vw;
     height :50vh;
     border-radius:75px
+}
+
+#you-gay{
+    height: 25px;
+    width: 75px;
+    margin-left:100vw;
+    border-radius: 20px;
+  /*  animation-name:slideIn;
+    animation-duration: 2s;
+    animation-name:slideOut;
+    animation-duration: 2s;*/
+    animation-name:colorChange,fontChange,slideIn;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    text-align: center;
+}
+
+@keyframes slideIn{
+    to{transform: translateX(-100vw)}
+}
+@keyframes slideOut{
+    to{transform: translateX(100vw)}
+}
+@keyframes fontChange{
+    0%{background-color:yellow;}
+    25%{background-color:pink;}
+    50%{background-color:red;}
+    75%{background-color:orange;}
+    100%{background-color:yellow;}
+}
+@keyframes colorChange{
+    0%{color:rgb(255, 124, 207);}
+    25%{color:orange;}
+    50%{color:yellow;}
+    75%{color:pink;}
+    100%{color:red;}
 }
 /*html/head/ <meta http-equiv="refresh" content="10"> */
 
