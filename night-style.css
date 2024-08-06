@@ -135,7 +135,7 @@ p{
     animation-duration: 2s;*/
     animation-name:colorChange,fontChange,slideIn;
     animation-direction: alternate;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in-out;
     text-align: center;
